@@ -28,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #023EA880;
+    background-color: #D9D9D9;
     margin-left: -103px;
     margin-right: -103px;
     padding: 10px 103px;
@@ -38,6 +38,7 @@ header {
 
 h1 {
     margin: 0;
+    color: #656565;
 }
 
 nav {
@@ -99,24 +100,62 @@ nav a {
 
 .main-content {
     grid-column: 2 / 5;
-    background-color: #3B813280;
+    background-color: #00000010;
     min-height: 300px;
     padding: 10px;
+    font-size: 12px;
 }
 
 .additional-details {
     grid-column: 5 / 8;
-    background-color: #F2C10080;
+    background-color: #00000010;
     min-height: 300px;
     padding: 10px;
 }
 
+.additional-details img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.additional-details figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.additional-details .feedback {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
 footer {
     grid-column: 1 / -1;
-    background-color: #E5DE0080;
+    background-color: #D9D9D9;
     margin-left: -103px;
     margin-right: -103px;
     padding: 10px 103px;
     text-align: center;
     min-height: 50px;
+    font-size: 10px;
+}
+
+.footer-links {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    justify-content: center;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: underline;
 }
