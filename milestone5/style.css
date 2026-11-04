@@ -31,7 +31,7 @@ header {
     background-color: #D9D9D9;
     margin-left: -103px;
     margin-right: -103px;
-    padding: 10px 103px;
+    padding: 0 103px;
     text-align: left;
     min-height: 60px;
 }
@@ -57,6 +57,31 @@ nav ul {
 nav a {
     color: inherit;
     text-decoration: none;
+}
+
+#main-nav {
+    align-self: stretch;
+}
+
+#main-nav ul {
+    height: 100%;
+    align-items: stretch;
+}
+
+#main-nav li {
+    display: flex;
+}
+
+#main-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+#main-nav a[aria-current="page"] {
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 
@@ -132,6 +157,22 @@ nav a {
     padding: 5px;
     border-radius: 5px;
     font-size: 12px;
+}
+
+.rating-response {
+    position: relative;
+    min-height: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.rating-response span + span {
+    position: absolute;
+    inset: 0;
+}
+
+.rating-response span {
+    transition: opacity 120ms linear;
 }
 
 footer {
