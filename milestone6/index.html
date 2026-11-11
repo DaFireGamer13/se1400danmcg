@@ -12,6 +12,10 @@
     <header>
         <h1>The Website</h1>
         <nav id="main-nav">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span>☰ Menu</span>
+            </label>
             <ul>
                 <li><a href="index.html" aria-current="page">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
@@ -23,7 +27,10 @@
     </header>
     <div class="boring-pic">
         <figure>
-            <img src="Hero Image.png" alt="Boring Image">
+            <picture>
+                <source media="(min-width: 768px)" srcset="Hero Image.png" type="image/jpeg">
+                <img src="Hero Image.png" alt="Boring Image">
+            </picture>
             <figcaption class="boring-pic-description">A boring, gray field. What did you expect?</figcaption>
         </figure>
     </div>
@@ -39,7 +46,10 @@
 
     </main>
     <aside class="additional-details">
-        <img src="cat_image.png" alt="Cat">
+        <picture>
+            <source media="(min-width: 768px)" srcset="cat_image.png" type="image/png">
+            <img src="cat_image.png" alt="Cat">
+        </picture>
         <figcaption class="cat-image-description">Ok, here’s a cute kitty cat so it’s not all drab.</figcaption>
         <div class="feedback">
             <h3>HOW WAS YOUR WEBSITE EXPERIENCE?</h3>
